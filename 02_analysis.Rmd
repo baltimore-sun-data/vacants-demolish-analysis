@@ -9,7 +9,7 @@ output:
 
 ## Analysis: vacant buildings to be demolished
 
-The Baltimore Sun obtained a list of vacant buildings to be demolished from the Baltimore City Department of Housing & Community Development. The following analysis provided the numbers in a March 15, 2019 Baltimore Sun story titled "Baltimore officials pledge to demolish 2,100 vacant houses by next summer."
+The Baltimore Sun obtained a list of vacant buildings to be demolished from the Baltimore City Department of Housing & Community Development. The following analysis provided the numbers in a March 15, 2019 Baltimore Sun story titled ["Once again, Baltimore officials say they'll demolish more vacants — pledging to take down 2,000 in coming year."](https://www.baltimoresun.com/news/maryland/politics/bs-md-ci-vacant-demolition-20190214-story.html)
 
 Here are the key statistics reported in the story:
 

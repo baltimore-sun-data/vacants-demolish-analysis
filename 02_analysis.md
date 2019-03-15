@@ -1,12 +1,12 @@
 Analysis: vacant buildings to be demolished
 -------------------------------------------
 
-The Baltimore Sun obtained a list of vacant buildings to be demolished from the Baltimore City Department of Housing & Community Development. The following analysis provided the numbers in a March 15, 2019 Baltimore Sun story titled "Baltimore officials pledge to demolish 2,100 vacant houses by next summer."
+The Baltimore Sun obtained a list of vacant buildings to be demolished from the Baltimore City Department of Housing & Community Development. The following analysis provided the numbers in a March 15, 2019 Baltimore Sun story titled ["Once again, Baltimore officials say they'll demolish more vacants — pledging to take down 2,000 in coming year."](https://www.baltimoresun.com/news/maryland/politics/bs-md-ci-vacant-demolition-20190214-story.html)
 
 Here are the key statistics reported in the story:
 
 -   There are almost 17,000 vacant buildings in the city currently.
--   1,803 properties are scheduled for demolition by June 30, 2020.
+-   1,806 properties are scheduled for demolition by June 30, 2020.
 -   Eighty percent of the properties scheudled for demolition by FY 2020 are in just 16 neighborhoods.
 -   Broadway East is projected to see 271 vacants come down. Sandtown-Winchester, 199, and Harlem Park, 143.
 -   Coldstream Homestead Montebello currently has 448 abandoned buildings and is projected to see 87 demolitions by next summer.
@@ -41,7 +41,7 @@ print(paste("There are currently",
 
     ## [1] "There are currently 16724 vacant buildings according to Open Baltimore as of Feb. 14, 2019."
 
-### Finding: 1803 properties are scheduled for demolition by June 30, 2020.
+### Finding: 1806 properties are scheduled for demolition by June 30, 2020.
 
 Data on vacant buildings scheduled for demolition is from a file provided by the Baltimore City Department of Housing & Community Development. The raw file was pre-processed prior to analysis. See `01_processing.md` for more details.
 
