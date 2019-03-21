@@ -182,3 +182,37 @@ merged.all <- merge(merged.centroids_sf.reproj.df,
 write_csv(merged.all %>% arrange(neighborhood, address), 
           'output/demolish_list_clean.csv')
 ```
+
+Mapping
+
+``` r
+# If you're using a Mac, uncomment and run the lines below
+#options(device = "X11") 
+#X11.options(type = "cairo")
+
+bmore <- st_read('input/bmore_1/bmore_1.shp')
+```
+
+    ## Reading layer `bmore_1' from data source `/Users/czhang/Documents/vacant/vacants-demolition-analysis/input/bmore_1/bmore_1.shp' using driver `ESRI Shapefile'
+    ## Simple feature collection with 1 feature and 8 fields
+    ## geometry type:  MULTIPOLYGON
+    ## dimension:      XY
+    ## bbox:           xmin: -76.71129 ymin: 39.19741 xmax: -76.52967 ymax: 39.37199
+    ## epsg (SRID):    4326
+    ## proj4string:    +proj=longlat +datum=WGS84 +no_defs
+
+``` r
+ggplot(bmore) + 
+  geom_sf() +
+  geom_point(data = merged.centroids_sf.reproj.df, 
+             aes(x = long, y = lat),
+             shape=21, fill="black", color="white", size=2) +
+  theme_void() +
+  theme(panel.grid.major = element_line(colour = 'transparent'))
+```
+
+![](01_processing_files/figure-markdown_github/mapping-1.png)
+
+``` r
+ggsave('output/map_plot.png', width = 7, height = 7)
+```

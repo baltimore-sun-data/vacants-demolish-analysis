@@ -6,8 +6,8 @@ vacants.count <- vacants.count %>% mutate(date = mdy(date))
 
 
 ggplot(vacants.count %>% filter(month(date) == 1), aes(x = date, group = 1))  +
-  geom_line(aes(y = count), color = '#2484C6', size = 6) +
-  geom_point(aes(y = count), fill = 'white', color = '#2484C6', size = 3, shape=21) +
+  geom_line(aes(y = count), color = '#2484C6', size = 2) +
+  geom_point(aes(y = count), fill = 'white', color = '#2484C6', size = 5, shape=21) +
   scale_y_continuous(limits = c(14000, 18000)) +
   scale_x_date(date_breaks = '1 year', date_labels = "%Y") +
   theme(panel.background = element_blank(), 
@@ -17,5 +17,5 @@ ggplot(vacants.count %>% filter(month(date) == 1), aes(x = date, group = 1))  +
        panel.grid.minor.x = element_blank()) + 
   labs(x = '', y = '')
 
-ggsave('output/vacants_graph.eps', device = 'eps', width = 8, height = 6)
+ggsave('output/vacants_graph_print.eps', device = 'eps', width = 6, height = 7)
 
